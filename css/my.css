@@ -1,0 +1,8 @@
+table, th, td {
+     border: 1px solid cyan;
+     background-color: mediumslateblue
+}
+table
+{
+    text-align: left
+}
