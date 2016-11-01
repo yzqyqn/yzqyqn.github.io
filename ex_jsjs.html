@@ -3,41 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 " />
-	<title>Nazo_Game</title>
+	<title>ame</title>
 	<link href="//cdn.bootcss.com/material-design-icons/2.2.3/iconfont/material-icons.css" rel="stylesheet">
 	<link href="//cdn.bootcss.com/materialize/0.97.7/css/materialize.min.css" rel="stylesheet">
-	  <style>
-        html{
-            height: 100%;
-        }
-        body{
-            background-color: #E3F2FD;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        #content{
-            flex:1;
-        }
-
-        .input-field label {
-            color: #bbdefb;
-        }
-        .input-field input[type=text]:focus + label {
-            color: #1e88e5;
-        }
-        .input-field input[type=text]:focus {
-            border-bottom: 1px solid #1e88e5;
-            box-shadow: 0 1px 0 0 #1e88e5;
-        }
-    </style>
+	<style>
+		html {
+			height: 100%;
+		}
+		
+		body {
+			background-color: #E3F2FD;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		#content {
+			flex: 1;
+		}
+		
+		.input-field label {
+			color: #bbdefb;
+		}
+		
+		.input-field input[type=text]:focus + label {
+			color: #1e88e5;
+		}
+		
+		.input-field input[type=text]:focus {
+			border-bottom: 1px solid #1e88e5;
+			box-shadow: 0 1px 0 0 #1e88e5;
+		}
+	</style>
 </head>
-  
 
 <body>
 	<nav>
 		<div class="nav-wrapper blue darken-1">
-			<a href="http://nazo.one-story.cn" class="brand-logo center">Nazo_Puzzle</a>
+			<a href="./index.html" class="brand-logo center">你好呀~~~</a>
 		</div>
 	</nav>
 	<div class="container" id="content">
@@ -45,6 +48,13 @@
 			<div class="col s12 m10 l10 offset-m1 offset-l1">
 				<div class="card-panel white hoverable" id="question-card">
 					<h1 class="header blue-text center" id="nazo-title">1</h1>
+					<font face="arial" color="wheat" size=4>
+					<p>请运用您的技能和知识逃离这个全新的迷宫。<br>
+
+有些谜题涉及到一些电脑知识。 <br>
+但绝不会因为不懂电脑而卡关， <br>
+因为这同时也检验了您的搜索水平。</p>
+</font>
 					<div class="row">
 						<div class="input-field col s10 m8 l6 offset-s1 offset-m2 offset-l3">
 							<input id="nazo-answer" type="text" class="validate">
@@ -78,9 +88,8 @@
 		</div>
 	</footer>
 
-
+	<script type="text/javascript" src="./js/load_lib.js"></script>
 	<script>
-		//判断是否输入的东西叫做答案//
             var validateButton = document.getElementById("validate-button");
             var nazoAnswer = document.getElementById("nazo-answer");
             validateButton.addEventListener("click",function () {
