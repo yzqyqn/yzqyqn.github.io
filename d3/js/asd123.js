@@ -29,9 +29,7 @@ function blue(){
   c5.attr('cx',250).attr('cy',250).attr('r',30).attr('fill','blue');
 }  
 function purple(){
-  c5.attr('cx',250).attr('cy',250).attr('r',20).attr('fill','purple');
-}  
-//$(Document).ready(function(){
-//$("button").click(function(){
- // $("svg").animate({righr:'500px'});
-//});
+  c6.attr('cx',250).attr('cy',250).attr('r',20).attr('fill','purple');
+ 
+
+
