@@ -1,53 +1,22 @@
 
-  //<circle cx="250" cy="250" r="70"  fill="red" />
- //<circle cx="250" cy="250" r="60"  fill="orange" />
- //<circle cx="250" cy="250" r="50"  fill="yellow" />
-//<circle cx="250" cy="250" r="40"  fill="green" />
-//<circle cx="250" cy="250" r="30"  fill="blue" />
-//<circle cx="250" cy="250" r="20"  fill="purple "/>
 var svg =d3.select('svg');
 var r=svg.append('rect');
-var c1=svg.append('circle');
-var c2=svg.append('circle');
-var c3=svg.append('circle');
 var c4=svg.append('circle');
 var c5=svg.append('circle');
-var c6=svg.append('circle');
-var p1 = svg.append('polygon');
- //c1.attr('cx',250).attr('cy',250).attr('r',70).attr('fill','red');   
+var c1=svg.append('circle');
+var c2=svg.append('circle');
+var p1=svg.append('polygon');
+var p2=svg.append('polygon');
+var p3=svg.append('circle');
+var p4=svg.append('circle');
+
   r.attr('x',25).attr('y',38).attr('rx',20).attr('ry',20).attr('width',450).attr('height',450).attr('fill','white').attr('stroke-width',5).attr('stroke','black').attr('opacity',0.5);
- function orange(){
-      var a1 = Math.random()*200;
-  var b1 = Math.random()*200;
-  var d1 = Math.random()*100;
- c2.attr('cx',a1).attr('cy',b1).attr('r',d1).attr('fill','orange'); 
+p1.attr('points','215,190 275,215 275,165 ').attr('fill',' OliveDrab').attr('stroke',' OliveDrab').attr('stroke-width',1);
+p2.attr('points','250,120 250,260 130,190 ').attr('fill',' DarkSeaGreen').attr('stroke',' SandyBrown').attr('stroke-width',1);
 
-}
-function yellow(){
-    var a1 = Math.random()*200;
-  var b1 = Math.random()*200;
-  var d1 = Math.random()*100;
-   c3.attr('cx',a1).attr('cy',b1).attr('r',d1).attr('fill','yellow'); 
+p3.attr('points','227,250 265,275 265,225 ').attr('fill',' DarkOrange').attr('stroke',' DarkOrange').attr('stroke-width',1);
+p4.attr('points','240,190 240,310 150,250 ').attr('fill',' #FCB040;').attr('stroke',' #FCB040').attr('stroke-width',1);
+   c1.attr('cx',155).attr('cy',190).attr('r',5).attr('fill','white').attr('stroke',' white'); 
+  c2.attr('cx',177).attr('cy',250).attr('r',4).attr('fill','white').attr('stroke',' white'); 
+  
 
-}
-function green(){
-    var a1 = Math.random()*200;
-  var b1 = Math.random()*200;
-  var d1 = Math.random()*100;
-     c4.attr('cx',a1).attr('cy',b1).attr('r',d1).attr('fill','green');
-}
-function blue(){
-    var a1 = Math.random()*200;
-  var b1 = Math.random()*200;
-  var d1 = Math.random()*100;
-  c5.attr('cx',a1).attr('cy',b1).attr('r',d1).attr('fill','blue');
-}  
-function purple(){
-    var a1 = Math.random()*400;
-  var b1 = Math.random()*400;
-  var d1 = Math.random()*100;
-   c3.attr('cx',b1).attr('cy',b1).attr('r',d1).attr('fill','yellow'); 
-   c4.attr('cx',a1).attr('cy',b1).attr('r',d1).attr('fill','green');
-  c2.attr('cx',a1).attr('cy',b1).attr('r',d1).attr('fill','orange');
-  c5.attr('cx',a1).attr('cy',b1).attr('r',d1).attr('fill','purple');
-}  
